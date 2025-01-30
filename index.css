@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Smooch+Sans:wght@100..900&display=swap');
+
+* {
+    box-sizing          : 0;
+    padding             : 0;
+    margin              : 0;
+}
+
+body {
+    display             : flex;
+    flex-direction      : column;
+    height              : 100vh;
+    align-items         : center;
+    justify-content     : center;
+}
+
+.main-container {
+    display             : flex;
+    flex-direction      : column;
+    width               : 800px;
+    background-color    : #bbedc1;
+    border              : 3px solid green;
+    padding             : 10px;
+    row-gap             : 10px;
+}
+
+/* first row start */
+.first-row {
+    display             : flex;
+    flex-direction      : row;
+    align-items         : center;
+    height              : 70px;
+    background-color    : #add8e6;
+    border              : 3px solid blue;
+    padding             : 10px;
+    gap                 : 5px;
+}
+
+.right-sec,
+.middle-sec,
+.left-sec {
+    flex                : 33%;
+    background-color    : #fcdab9;
+    border              : 3px solid #f78072;
+    height              : 100%;
+}
+
+.middle-sec {
+    display             : flex;
+    flex-direction      : row;
+}
+
+.middle-sec > div {
+    flex                : 1;
+    background-color    : #fac0cb;
+    border              : 3px solid red;
+    margin              : 6px 0px;
+}
+
+.middle-sec > .middle-sec1 {
+    margin-left         : 6px;
+}
+
+.middle-sec > .middle-sec2{
+    margin-right        : 6px;
+}
+/* first row end */
+
+/* second row start */
+.second-row {
+    display             : flex;
+    flex-direction      : row;
+    height              : 180px;
+    gap                 : 5px;
+}
+
+.second-row > .col1 {
+    background-color    : #fabbbb;
+    border              : 3px solid maroon;
+    flex                : 1;
+} 
+
+.second-row > .col2 {
+    display             : flex;
+    flex-direction      : column;
+    flex                : 1;
+    gap                 : 5px;
+}
+
+.second-row > .col2 > :first-child,
+.second-row > .col2 > :last-child {
+    background-color    : #fabbbb;
+    border              : 3px solid maroon    ;
+    flex                : 1;
+}
+/* second row end */
+
+/* third row start */
+.third-row {
+    display             : flex;
+    flex-direction      : row;
+    height              : 70px;
+    padding             : 10px;
+    background-color    : #add8e6;
+    border              : 3px solid blue;
+    gap                 : 5px;
+}
+
+.third-row :first-child,
+.third-row :last-child {
+    flex                : 1;
+    border              : 3px solid #6a5acd;
+    background-color    : #e2deff;
+}
+
+.third-row :nth-child(2),
+.third-row :nth-child(3) {
+    flex                : 0.5;
+    background-color    : #fcdab9;
+    border              : 3px solid #f78072;
+}
+/* third row end */
+
+.bottom-name {
+    margin-top          : 50px;
+    font-family         : "Smooch Sans", serif;
+    font-size           : 40px;
+    font-weight         : 700;
+}
